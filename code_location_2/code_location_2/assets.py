@@ -8,7 +8,7 @@ class CustomDagsterDbtTranslator(DagsterDbtTranslator):
     def get_automation_condition(
         self, dbt_resource_props: Mapping[str, Any]
     ) -> Optional[AutomationCondition]:
-        return AutomationCondition.on_cron("* * * * *")
+        return AutomationCondition.eager()
     
 @dbt_assets(manifest=jaffle_shop_project.manifest_path,
             select="customers orders",

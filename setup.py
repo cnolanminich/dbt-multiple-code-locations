@@ -5,7 +5,10 @@ setup(
     packages=find_packages(exclude=["dagster_multi_tenant_example_tests"]),
     install_requires=[
         "dagster",
-        "dagster-cloud"
+        "dagster-cloud",
+        "dagster-dbt",
+        "dbt-core"
+        "dbt-duckdb"
     ],
     extras_require={"dev": ["dagster-webserver", "pytest"]},
 )
