@@ -1,0 +1,13 @@
+locations:
+  - location_name: code_location_1
+    code_source:
+      package_name: code_location_1
+    build:
+      directory: ./code_location_1
+      registry:  "registry location here"
+  - location_name: code_location_2
+    code_source:
+      package_name: code_location_2
+    build:
+      directory: ./code_location_2
+      registry:  "registry location here"
